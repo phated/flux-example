@@ -1,0 +1,27 @@
+{
+  "name": "flux-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ecstatic",
+    "build": "watchify client.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com/)",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "devDependencies": {
+    "watchify": "^0.10.1",
+    "reactify": "^0.13.1",
+    "ecstatic": "^0.5.3",
+    "envify": "^1.2.1",
+    "react": "^0.10.0",
+    "fluxxor": "^1.1.0",
+    "lodash": "^2.4.1"
+  }
+}
